@@ -23,3 +23,24 @@
 var strStr = function(haystack, needle) {
     return haystack.indexOf(needle)
 };
+
+// OTHER OPTION
+// /**
+//  * @param {string} haystack
+//  * @param {string} needle
+//  * @return {number}
+//  */
+// var strStr = function (haystack, needle) {
+//     for (let i = 0; i < haystack.length && haystack.length - i >= needle.length; i++) {
+//         if (needle[0] === haystack[i]) {
+//             for (let j = 0; j < needle.length; j++) {
+//                 if (needle[j] !== haystack[j + i]) {
+//                     break;
+//                 } else if (j === needle.length - 1) {
+//                     return i;
+//                 }
+//             }
+//         }
+//     }
+//     return -1;
+// };
