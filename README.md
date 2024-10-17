@@ -46,6 +46,9 @@ For each solution, I aim to:
 
 Check out my [LeetCode profile](https://leetcode.com/u/DussanFreire/) to see my progress and completed challenges.
 
+## 😃 Happiness in one photo
+![Screenshot 2024-10-17 at 8 13 30 AM](https://github.com/user-attachments/assets/d5100110-25db-4f25-9899-8036d44ec453)
+
 ## 📈 Progress
 
 *	Total Problems Solved: 50+
