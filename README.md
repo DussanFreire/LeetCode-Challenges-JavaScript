@@ -50,6 +50,7 @@ Check out my [LeetCode profile](https://leetcode.com/u/DussanFreire/) to see my 
 ![Screenshot 2024-10-17 at 8 13 30 AM](https://github.com/user-attachments/assets/d5100110-25db-4f25-9899-8036d44ec453)
 ![Screenshot 2024-10-18 at 8 25 11 AM](https://github.com/user-attachments/assets/531e756c-4646-4cdb-bb00-60aa1c3ba8b4)
 ![Screenshot 2024-10-19 at 8 41 36 AM](https://github.com/user-attachments/assets/91b5957c-1ed6-4f21-8619-1ac49dc216d2)
+![Screenshot 2024-10-24 at 8 20 38 AM](https://github.com/user-attachments/assets/0e64c430-6c87-4a41-a341-48956d98e16e)
 
 ## 📈 Progress
 
