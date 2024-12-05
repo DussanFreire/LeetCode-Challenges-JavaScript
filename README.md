@@ -3,6 +3,9 @@
 Welcome to my **LeetCode-JS-Solutions** repository! 🚀
 
 This repository contains my solutions to various LeetCode challenges, solved mostly using **JavaScript**. My goal is to continuously improve my problem-solving skills and share these solutions to help others in their coding journey.
+##  🏅 My last badge
+![Screenshot 2024-12-05 at 8 06 41 AM](https://github.com/user-attachments/assets/e92c19bc-df45-4c82-b8fe-a118881e245f)
+
 
 ## 📁 Structure
 
