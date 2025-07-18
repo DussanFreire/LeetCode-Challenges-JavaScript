@@ -26,25 +26,25 @@
  * @param {number[]} height
  * @return {number}
  */
-var maxArea = function (height) {
-    let start = 0, end = height.length-1, maxArea = 0;
 
-    do {
-        let minValue;
-        const distance = end - start;
-        if (height[start] > height[end]) {
-            minValue = height[end]
-            end--;
-        }
-        else {
-            minValue = height[start]
-            start++;
 
-        }
-        const area = minValue * distance;
-        maxArea = Math.max(area, maxArea)
+function maxArea(height: number[]): number {
+  let left = 0;
+  let right = height.length - 1;
+  let maxWater = 0;
 
-    } while (start !== end)
+  while (left < right) {
+    const width = right - left;
+    const h = Math.min(height[left], height[right]);
+    const area = width * h;
+    maxWater = Math.max(maxWater, area);
 
-    return maxArea;
-};
+    if (height[left] < height[right]) {
+      left++;
+    } else {
+      right--;
+    }
+  }
+
+  return maxWater;
+}
