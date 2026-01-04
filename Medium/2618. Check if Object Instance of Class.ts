@@ -29,24 +29,21 @@
 function checkIfInstanceOf(obj: any, classFunction: any): boolean {
     if (obj == null || classFunction == null) return false;
 
-    // Handle primitive values (e.g., 5, "a", true)
     const primitiveType = typeof obj;
     if (primitiveType !== "object" && primitiveType !== "function") {
-        return classFunction === Number && primitiveType === "number"
-            || classFunction === String && primitiveType === "string"
-            || classFunction === Boolean && primitiveType === "boolean"
-            || classFunction === BigInt && primitiveType === "bigint"
-            || classFunction === Symbol && primitiveType === "symbol";
+        try {
+            return Object(obj) instanceof classFunction;
+        } catch {
+            return false;
+        }
     }
 
-    let prototype = Object.getPrototypeOf(obj);
-    const targetPrototype = classFunction.prototype;
+    let proto = Object.getPrototypeOf(obj);
+    const targetProto = classFunction.prototype;
 
-    while (prototype !== null) {
-        if (prototype === targetPrototype) {
-            return true;
-        }
-        prototype = Object.getPrototypeOf(prototype);
+    while (proto !== null) {
+        if (proto === targetProto) return true;
+        proto = Object.getPrototypeOf(proto);
     }
 
     return false;
